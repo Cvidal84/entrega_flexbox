@@ -1,0 +1,145 @@
+header {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+}
+header > img {
+height: 50px; 
+}
+header > nav {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    
+}
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+a {
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+header > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header > nav {
+        width: 100%;
+    }
+    .nav_list {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .links {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .nav_list li {
+        margin: 5px;
+    }
+    .links a {
+        margin: 5px;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 80svh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* izquierda */
+main > section > img {
+    width: 80%;
+    max-width: 1100px;
+    min-width: 300;
+    padding: 0px;
+    min-width: 500px;
+}
+/* derecha */
+main > aside {
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+aside > h1 {
+    font-size: 30px;
+}
+aside > p {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+}
+aside > p > span {
+    font-size: 20px;
+}
+.bateria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bateria h2 {
+    margin-bottom: 10px;
+}
+.bateria button {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bateria button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+
