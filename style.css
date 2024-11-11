@@ -3,9 +3,12 @@ header {
     padding: 10px;
     flex-wrap: wrap;
     border: 1px solid gray;
+    align-items: center;
+    
 }
 header > img {
 height: 50px; 
+
 }
 header > nav {
     flex-grow: 3;
