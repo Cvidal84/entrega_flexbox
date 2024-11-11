@@ -79,7 +79,7 @@ main {
     display: flex;
     align-items: center;
     min-height: 80svh;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     border: 1px solid gray;
 }
@@ -138,9 +138,11 @@ aside > p > span {
     background-color: black;
     color: white;
 }
-
-
-
+.talla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 footer {
     display: flex;
